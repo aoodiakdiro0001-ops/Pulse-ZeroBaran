@@ -1,0 +1,20 @@
+# Pulse-ZeroBaran — .gitignore
+# لا تُرفع أبداً: المفاتيح · البيئات · المخرجات المؤقتة
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+streamlit_secrets.toml
+
+# مخرجات المسح المؤقتة (يُبقي أحدث نسخة كعيّنة)
+output/pulse_latest.json
+history/pulse-20*.json
+
+# بيانات العملاء الحساسة في الإنتاج
+# (بيانات seed التجريبية مسموحة للنشر)
+# data/reviews*.csv
